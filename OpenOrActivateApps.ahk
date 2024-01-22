@@ -33,3 +33,10 @@
 		Run "chrome.exe"
 }
 
+^#z::
+{
+	if WinExist("ahk_exe wezterm-gui.exe")
+		WinActivate
+	else
+		Run "wezterm-gui.exe"
+}
