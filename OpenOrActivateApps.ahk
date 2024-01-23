@@ -1,6 +1,6 @@
 ﻿#Requires AutoHotkey v2.0
 
-^#w::
+^!+w::
 {
 	if WinExist("WhatsApp")
 		WinActivate
@@ -8,7 +8,7 @@
 		Run "explorer shell:AppsFolder\5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App"
 }
 
-^#s::
+^!+s::
 {
 	if WinExist("ahk_exe Slack.exe")
 		WinActivate
@@ -17,7 +17,7 @@
 }
 
 
-^#d::
+^!+d::
 {
 	if WinExist("ahk_exe Discord.exe")
 		WinActivate
@@ -25,7 +25,7 @@
 		Run "C:\Users\" . A_UserName . "\AppData\Local\Discord\Update.exe --processStart Discord.exe"
 }
 
-^#c::
+^!+c::
 {
 	if WinExist("ahk_exe chrome.exe")
 		WinActivate
@@ -33,7 +33,7 @@
 		Run "chrome.exe"
 }
 
-^#z::
+^!+z::
 {
 	if WinExist("ahk_exe wezterm-gui.exe")
 		WinActivate
