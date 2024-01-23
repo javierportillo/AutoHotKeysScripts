@@ -40,3 +40,12 @@
 	else
 		Run "wezterm-gui.exe"
 }
+
+^!+t::
+{
+	if WinExist("ahk_exe WindowsTerminal.exe")
+		WinActivate
+	else
+		Run "wt"
+}
+
