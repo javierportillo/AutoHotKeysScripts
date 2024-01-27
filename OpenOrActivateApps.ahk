@@ -49,3 +49,11 @@
 		Run "wt"
 }
 
+^!+f::
+{
+	if WinExist("ahk_exe Files.exe")
+		WinActivate
+	else
+		Run "files.exe"
+}
+
